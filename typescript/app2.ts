@@ -22,7 +22,28 @@ class Carro{
     }
 }
 
-let carroA = new Carro("Veloster",3);
-console.log(carroA);
-carroA.acelerar();
-console.log(carroA);
+class Concessionaria{
+    private endereco: string;
+    //aqui a variável consegue receber QUALQUER tipo de dados
+    //private listaDeCarros: any;
+    private listaDeCarros: Array<Carro>;
+
+    constructor(endereco: string, listaDeCarros: Array<Carro>){
+        this.endereco = endereco;
+        this.listaDeCarros = listaDeCarros;
+    }
+
+    public fornecerEndereco(): string{
+        return this.endereco;
+    }
+
+    public mostrarListaDeCarros(): Array<Carro>{
+        return this.listaDeCarros;
+    }
+}
+
+// let carroA = new Carro("Veloster",3);
+// console.log(carroA);
+// carroA.acelerar();
+// console.log(carroA);
+
