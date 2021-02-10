@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Concessionaria = void 0;
-//class: feature do ES6 - necessita transpile
 var Concessionaria = /** @class */ (function () {
     function Concessionaria(endereco, listaDeCarros) {
         this.endereco = endereco;
