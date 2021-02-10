@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 //imports
-var Carro_1 = require("./Carro");
-var Pessoa_1 = require("./Pessoa");
-var Concessionaria_1 = require("./Concessionaria");
+var Carro_1 = __importDefault(require("./Carro"));
+var Pessoa_1 = __importDefault(require("./Pessoa"));
+var Concessionaria_1 = __importDefault(require("./Concessionaria"));
 // let carroA = new Carro("Veloster",3);
 // console.log(carroA);
 // carroA.acelerar();
@@ -11,17 +14,17 @@ var Concessionaria_1 = require("./Concessionaria");
 /****************************************************************************/
 /* Criando Carros                                                           */
 /****************************************************************************/
-var carroA = new Carro_1.Carro("Onix", 4);
-var carroB = new Carro_1.Carro("Celta", 4);
-var carroC = new Carro_1.Carro("Fusca", 2);
-var carroD = new Carro_1.Carro("Duster", 4);
-var carroE = new Carro_1.Carro("Clio", 4);
+var carroA = new Carro_1.default("Onix", 4);
+var carroB = new Carro_1.default("Celta", 4);
+var carroC = new Carro_1.default("Fusca", 2);
+var carroD = new Carro_1.default("Duster", 4);
+var carroE = new Carro_1.default("Clio", 4);
 /****************************************************************************/
 /* lista de carros                                                          */
 /****************************************************************************/
 var carros = [carroA, carroB, carroC, carroD, carroE];
-var concessionaria = new Concessionaria_1.Concessionaria("Rua Saldanha Marinho", carros);
-var cliente = new Pessoa_1.Pessoa("Claudio", "Onix", carroC);
+var concessionaria = new Concessionaria_1.default("Rua Saldanha Marinho", carros);
+var cliente = new Pessoa_1.default("Claudio", "Onix", carroC);
 /****************************************************************************/
 /* Concessionária                                                           */
 /****************************************************************************/
