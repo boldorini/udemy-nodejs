@@ -16,21 +16,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-//export transforma o arquivo em módulo
 var Veiculo_1 = __importDefault(require("./Veiculo"));
-var Carro = /** @class */ (function (_super) {
-    __extends(Carro, _super);
-    function Carro(modelo, numeroDePortas) {
-        var _this = _super.call(this) || this;
-        //this.setModelo(modelo);
-        _this.modelo = modelo;
-        _this.numeroDePortas = numeroDePortas;
-        return _this;
+//export default class Moto extends Veiculo{}
+var Moto = /** @class */ (function (_super) {
+    __extends(Moto, _super);
+    function Moto() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    Carro.prototype.getModelo = function () {
-        //return this.getModelo();
-        return this.modelo;
+    Moto.prototype.acelerar = function () {
+        this.setVelocidade(20);
     };
-    return Carro;
+    return Moto;
 }(Veiculo_1.default));
-exports.default = Carro;
+//a exportação pode ser feita dessa maneira também
+exports.default = Moto;
